@@ -144,7 +144,11 @@
     <None Include="res\MonitorSYS.rc2" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="C:\Users\Administrator\Desktop\中南大学修改版1-32.png" />
+    <Image Include="C:\Users\Administrator\Desktop\中南大学修改版1_48.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\中南大学修改版1_48.png" />
     <Image Include="res\MonitorSYS.ico" />
+    <Image Include="res\Project1.ico" />
     <Image Include="res\xs1.bmp" />
     <Image Include="res\xs2.bmp" />
     <Image Include="res\xs3.bmp" />

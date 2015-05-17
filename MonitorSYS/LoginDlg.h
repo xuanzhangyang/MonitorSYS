@@ -16,6 +16,7 @@ public:
 	enum { IDD = IDD_LOGINDLG };
 	CBrush m_brush;
 	CFont m_font;
+	CFont m_font1;
 	CDLEdit *editUserID;
 	CDLEdit *editUserPWD;
 	CButtonST *btLogin;
@@ -35,4 +36,5 @@ public:
 	afx_msg void OnBnClickedCancel();
 	afx_msg void OnBnClickedLogin();
 	void OnBnClickedMinWind();
+	CButtonST m_btcsu;
 };

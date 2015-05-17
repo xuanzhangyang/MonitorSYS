@@ -103,6 +103,7 @@ public:
 	//}}AFX_VIRTUAL
 
 public:
+	BOOL m_staticed;
 	DWORD SetDefaultColors(BOOL bRepaint = TRUE);
 	DWORD SetColor(BYTE byColorIndex, COLORREF crColor, BOOL bRepaint = TRUE);
 	DWORD GetColor(BYTE byColorIndex, COLORREF* crpColor);

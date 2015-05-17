@@ -128,5 +128,17 @@
     <Image Include="res\xs3.bmp">
       <Filter>资源文件</Filter>
     </Image>
+    <Image Include="C:\Users\Administrator\Desktop\中南大学修改版1-32.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="C:\Users\Administrator\Desktop\中南大学修改版1_48.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="C:\Users\Administrator\Desktop\中南大学修改版1_48.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Project1.ico">
+      <Filter>资源文件</Filter>
+    </Image>
   </ItemGroup>
 </Project>

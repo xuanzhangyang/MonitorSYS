@@ -28,6 +28,7 @@ CLoginDlg::~CLoginDlg()
 void CLoginDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialog::DoDataExchange(pDX);
+	DDX_Control(pDX, IDC_BTCSU, m_btcsu);
 }
 
 
@@ -49,20 +50,25 @@ BOOL CLoginDlg::OnInitDialog()
 	CDialog::OnInitDialog();
 
 	// TODO:  在此添加额外的初始化
+
+	m_brush.CreateSolidBrush(RGB(69, 159, 134));
+	m_font.CreatePointFont(150, L"微软雅黑");
+	m_font1.CreatePointFont(140, L"微软雅黑");
 	editUserID = new CDLEdit();
 
 	//editUserID->setText(L"username");
 
 
 	editUserID->m_strGrayString = L"username";
-
+	//editUserID->SetGrayString(L"username");
 	editUserID->Create(ES_LEFT | WS_VISIBLE, CRect(40, 100, 210, 120), this, IDC_EDITUSERID);
 	editUserPWD = new CDLEdit();
 	editUserPWD->m_strGrayString = L"password";
+	//editUserPWD->SetGrayString(L"password");
 	//editUserPWD->m_nFocusStyle = ;
 	editUserPWD->Create(ES_LEFT | WS_VISIBLE, CRect(40, 140, 210, 160), this, IDC_EDITSUERPWD);
 	btLogin = new CButtonST();
-	btLogin->Create(L"Enter", WS_VISIBLE, CRect(38, 185, 212, 220), this, IDC_BUTTONLOGIN);
+	btLogin->Create(L"Login", WS_VISIBLE, CRect(38, 185, 212, 220), this, IDC_BUTTONLOGIN);
 	btLogin->SetColor(0, RGB(79, 197, 173));
 	btLogin->SetColor(2, RGB(79, 197, 173));
 	btLogin->SetColor(1, RGB(255, 255, 255));
@@ -86,8 +92,18 @@ BOOL CLoginDlg::OnInitDialog()
 	minwind->SetColor(4, RGB(69, 159, 134));
 	minwind->SetColor(5, RGB(69, 159, 134));
 
-	m_brush.CreateSolidBrush(RGB(69, 159, 134));
-	m_font.CreatePointFont(150, L"微软雅黑");
+	m_btcsu.SetColor(0, RGB(69, 159, 134));
+	m_btcsu.SetColor(2, RGB(69, 159, 134));
+	m_btcsu.SetColor(1, RGB(255, 255, 255));
+	m_btcsu.SetColor(3, RGB(255, 255, 255));
+	m_btcsu.SetColor(4, RGB(69, 159, 134));
+	m_btcsu.SetColor(5, RGB(69, 159, 134));
+	m_btcsu.SetFont(&m_font1);
+	m_btcsu.m_staticed = TRUE;					//将按钮设置为静态文本
+	//m_btcsu.setfalseColor(RGB(255, 255, 255));
+	m_btcsu.SetIcon(IDI_CSU);
+	m_btcsu.SetAlign(CButtonST::ST_ALIGN_HORIZ);
+	
 	return TRUE;  // return TRUE unless you set the focus to a control
 	// 异常: OCX 属性页应返回 FALSE
 }

@@ -19,7 +19,7 @@ CButtonST::CButtonST()
 	m_bIsFocused		= FALSE;
 	m_bIsDisabled		= FALSE;
 	m_bMouseOnButton	= FALSE;
-
+	m_staticed			= FALSE;
 	FreeResources(FALSE);
 
 	// Default type is "flat" button
@@ -370,37 +370,41 @@ void CButtonST::CancelHover()
 
 void CButtonST::OnMouseMove(UINT nFlags, CPoint point)
 {
-	CWnd*				wndUnderMouse = NULL;
-	CWnd*				wndActive = this;
-	TRACKMOUSEEVENT		csTME;
-
-	CButton::OnMouseMove(nFlags, point);
-
-	ClientToScreen(&point);
-	wndUnderMouse = WindowFromPoint(point);
-
-	// If the mouse enter the button with the left button pressed then do nothing
-	if (nFlags & MK_LBUTTON && m_bMouseOnButton == FALSE) return;
-
-	// If our button is not flat then do nothing
-	if (m_bIsFlat == FALSE) return;
-
-	if (m_bAlwaysTrack == FALSE)	wndActive = GetActiveWindow();
-
-	if (wndUnderMouse && wndUnderMouse->m_hWnd == m_hWnd && wndActive)
+	if (!m_staticed)
 	{
-		if (!m_bMouseOnButton)
+		CWnd*				wndUnderMouse = NULL;
+		CWnd*				wndActive = this;
+		TRACKMOUSEEVENT		csTME;
+
+		CButton::OnMouseMove(nFlags, point);
+
+		ClientToScreen(&point);
+		wndUnderMouse = WindowFromPoint(point);
+
+		// If the mouse enter the button with the left button pressed then do nothing
+		if (nFlags & MK_LBUTTON && m_bMouseOnButton == FALSE) return;
+
+		// If our button is not flat then do nothing
+		if (m_bIsFlat == FALSE) return;
+
+		if (m_bAlwaysTrack == FALSE)	wndActive = GetActiveWindow();
+
+		if (wndUnderMouse && wndUnderMouse->m_hWnd == m_hWnd && wndActive)
 		{
-			m_bMouseOnButton = TRUE;
+			if (!m_bMouseOnButton)
+			{
+				m_bMouseOnButton = TRUE;
 
-			Invalidate();
+				Invalidate();
 
-			csTME.cbSize = sizeof(csTME);
-			csTME.dwFlags = TME_LEAVE;
-			csTME.hwndTrack = m_hWnd;
-			::_TrackMouseEvent(&csTME);
-		} // if
-	} else CancelHover();
+				csTME.cbSize = sizeof(csTME);
+				csTME.dwFlags = TME_LEAVE;
+				csTME.hwndTrack = m_hWnd;
+				::_TrackMouseEvent(&csTME);
+			} // if
+		}
+		else CancelHover();
+	}
 } // End of OnMouseMove
 
 // Handler for WM_MOUSELEAVE

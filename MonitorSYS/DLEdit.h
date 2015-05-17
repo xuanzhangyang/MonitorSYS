@@ -60,7 +60,7 @@ protected:
 
 //风格定制函数
 public:
-	void setText(LPCTSTR lpszText);
+
 	void SetFont(int nPointSize, LPCTSTR lpszFaceName);
 	void SetFocusStyle(int nStyle = FOCUS_DEFAULT);
 	void SetBkGndColor(
