@@ -63,6 +63,99 @@
     <ClInclude Include="ConditionDlg.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ChartClass\ChartAxis.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartAxisLabel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartBalloonLabel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartBarSerie.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartCandlestickSerie.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartCrossHairCursor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartCursor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartDateTimeAxis.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartDragLineCursor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartFont.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartGanttSerie.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartGradient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartGrid.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartLabel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartLegend.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartLineSerie.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartLogarithmicAxis.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartMouseListener.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartPointsArray.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartPointsSerie.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartScrollBar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartSerie.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartSerieBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartSeriesMouseListener.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartStandardAxis.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartString.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartSurfaceSerie.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartTitle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartXYSerie.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\PointsOrdering.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MonitorSYS.cpp">
@@ -104,6 +197,75 @@
     <ClCompile Include="ConditionDlg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ChartClass\ChartAxis.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartAxisLabel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartBarSerie.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartCandlestickSerie.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartCrossHairCursor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartCursor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartDateTimeAxis.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartDragLineCursor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartFont.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartGanttSerie.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartGradient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartGrid.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartLegend.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartLineSerie.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartLogarithmicAxis.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartPointsSerie.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartScrollBar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartSerie.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartStandardAxis.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartSurfaceSerie.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartTitle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartXYSerie.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="MonitorSYS.rc">
@@ -113,6 +275,18 @@
   <ItemGroup>
     <None Include="res\MonitorSYS.rc2">
       <Filter>资源文件</Filter>
+    </None>
+    <None Include="ChartClass\ChartBalloonLabel.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="ChartClass\ChartLabel.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="ChartClass\ChartPointsArray.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="ChartClass\ChartSerieBase.inl">
+      <Filter>头文件</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +312,21 @@
       <Filter>资源文件</Filter>
     </Image>
     <Image Include="res\Project1.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="C:\Users\Administrator\Desktop\pause.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="C:\Users\Administrator\Desktop\play.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\play1.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\pause.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\play.ico">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>

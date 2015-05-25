@@ -70,6 +70,9 @@ void CMonitorSYSDlg::DoDataExchange(CDataExchange* pDX)
 	DDX_Control(pDX, IDC_LEBELCONDITION, m_workcondition);
 	DDX_Control(pDX, IDC_TIME, m_time);
 	DDX_Control(pDX, IDC_LABEL, m_label);
+	DDX_Control(pDX, IDC_HOME, m_home);
+	DDX_Control(pDX, IDC_HISTORY, m_history);
+	DDX_Control(pDX, IDC_EXPERTSYSTEM, m_expertsys);
 }
 
 BEGIN_MESSAGE_MAP(CMonitorSYSDlg, CDialogEx)
@@ -122,7 +125,7 @@ BOOL CMonitorSYSDlg::OnInitDialog()
 
 	// TODO:  ÔÚ´ËÌí¼Ó¶îÍâµÄ³õÊ¼»¯´úÂë
 	m_brush.CreateSolidBrush(RGB(0, 122, 204));
-	m_font.CreatePointFont(150, L"Î¢ÈíÑÅºÚ");
+	m_font.CreatePointFont(170, L"Î¢ÈíÑÅºÚ");
 	m_font1.CreatePointFont(130, L"Î¢ÈíÑÅºÚ");
 	m_font2.CreatePointFont(110, L"Î¢ÈíÑÅºÚ");
 
@@ -166,24 +169,36 @@ BOOL CMonitorSYSDlg::OnInitDialog()
 	m_label.setfalseColor(RGB(255, 255, 0));
 	m_label.SetFont(&m_font2);
 
+	setbtColor(&m_home, RGB(0, 122, 204));
+	m_home.setfalseColor(RGB(255, 255, 255));
+	m_home.SetFont(&m_font1);
+
+	setbtColor(&m_history, RGB(0, 122, 204));
+	m_history.setfalseColor(RGB(255, 255, 255));
+	m_history.SetFont(&m_font1);
+
+	setbtColor(&m_expertsys, RGB(0, 122, 204));
+	m_expertsys.setfalseColor(RGB(255, 255, 255));
+	m_expertsys.SetFont(&m_font1);
+
  	processDlg.Create(IDD_PROCESSDIAGRAM, this);
- 	processDlg.SetWindowPos(NULL, 20, 100, 0, 0, SWP_NOSIZE | SWP_NOZORDER | SWP_NOACTIVATE);
+ 	processDlg.SetWindowPos(NULL, 20, 110, 0, 0, SWP_NOSIZE | SWP_NOZORDER | SWP_NOACTIVATE);
 	processDlg.ShowWindow(SW_SHOW);
 	m_btprocess.EnableWindow(FALSE);
 
 	
 
 	goldDlg.Create(IDD_GOLDDLG, this);
-	goldDlg.SetWindowPos(NULL, 20, 100, 0, 0, SWP_NOSIZE | SWP_NOZORDER | SWP_NOACTIVATE);
+	goldDlg.SetWindowPos(NULL, 20, 110, 0, 0, SWP_NOSIZE | SWP_NOZORDER | SWP_NOACTIVATE);
 
 	antimonyDlg.Create(IDD_ANTIMONYDLG, this);
-	antimonyDlg.SetWindowPos(NULL, 20, 100, 0, 0, SWP_NOSIZE | SWP_NOZORDER | SWP_NOACTIVATE);
+	antimonyDlg.SetWindowPos(NULL, 20, 110, 0, 0, SWP_NOSIZE | SWP_NOZORDER | SWP_NOACTIVATE);
 
 	optimizeCtrDlg.Create(IDD_OPTIMIZECTRDLG, this);
-	optimizeCtrDlg.SetWindowPos(NULL, 20, 100, 0, 0, SWP_NOSIZE | SWP_NOZORDER | SWP_NOACTIVATE);
+	optimizeCtrDlg.SetWindowPos(NULL, 20, 110, 0, 0, SWP_NOSIZE | SWP_NOZORDER | SWP_NOACTIVATE);
 
 	conditionDlg.Create(IDD_CONDITIONDLG, this);
-	conditionDlg.SetWindowPos(NULL, 20, 100, 0, 0, SWP_NOSIZE | SWP_NOZORDER | SWP_NOACTIVATE);
+	conditionDlg.SetWindowPos(NULL, 20, 110, 0, 0, SWP_NOSIZE | SWP_NOZORDER | SWP_NOACTIVATE);
 
 	_tsetlocale(LC_ALL, _T("chs"));
 	SetTimer(1, 100, NULL);

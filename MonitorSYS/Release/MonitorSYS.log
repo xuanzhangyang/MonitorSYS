@@ -1,9 +1,53 @@
-﻿生成启动时间为 2015/5/16 17:07:04。
+﻿生成启动时间为 2015/5/26 3:56:20。
      1>项目“E:\code\C&C++\C&C++\MonitorSYS\MonitorSYS\MonitorSYS.vcxproj”在节点 2 上(Build 个目标)。
-     1>Link:
+     1>ClCompile:
+         D:\install\VS2013\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl- /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\MonitorSYS.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt MonitorSYSDlg.cpp
+         MonitorSYSDlg.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0804" /IRelease\ /nologo /fo"Release\MonitorSYS.res" MonitorSYS.rc 
+       Link:
+         D:\install\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\code\C&C++\C&C++\MonitorSYS\Release\MonitorSYS.exe" /INCREMENTAL:NO /NOLOGO opencv_core2410.lib opencv_calib3d2410.lib opencv_contrib2410.lib opencv_features2d2410.lib opencv_flann2410.lib opencv_gpu2410.lib opencv_highgui2410.lib opencv_imgproc2410.lib opencv_legacy2410.lib opencv_ml2410.lib opencv_nonfree2410.lib opencv_objdetect2410.lib opencv_ocl2410.lib opencv_photo2410.lib opencv_stitching2410.lib opencv_superres2410.lib opencv_ts2410.lib opencv_video2410.lib opencv_videostab2410.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:D:\install\VS2013\VC\Include\Manifest\dpiaware.manifest /DEBUG /PDB:"E:\code\C&C++\C&C++\MonitorSYS\Release\MonitorSYS.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\code\C&C++\C&C++\MonitorSYS\Release\MonitorSYS.lib" /MACHINE:X86 /SAFESEH Release\MonitorSYS.res
+         Release\AntimonyDlg.obj
+         Release\BCMenu.obj
+         Release\BtnST.obj
+         Release\ChartAxis.obj
+         Release\ChartAxisLabel.obj
+         Release\ChartBarSerie.obj
+         Release\ChartCandlestickSerie.obj
+         Release\ChartCrossHairCursor.obj
+         Release\ChartCtrl.obj
+         Release\ChartCursor.obj
+         Release\ChartDateTimeAxis.obj
+         Release\ChartDragLineCursor.obj
+         Release\ChartFont.obj
+         Release\ChartGanttSerie.obj
+         Release\ChartGradient.obj
+         Release\ChartGrid.obj
+         Release\ChartLegend.obj
+         Release\ChartLineSerie.obj
+         Release\ChartLogarithmicAxis.obj
+         Release\ChartPointsSerie.obj
+         Release\ChartScrollBar.obj
+         Release\ChartSerie.obj
+         Release\ChartStandardAxis.obj
+         Release\ChartSurfaceSerie.obj
+         Release\ChartTitle.obj
+         Release\ChartXYSerie.obj
+         Release\ConditionDlg.obj
+         Release\CvvImage.obj
+         Release\DLEdit.obj
+         Release\GoldDlg.obj
+         Release\LoginDlg.obj
+         Release\MonitorSYS.obj
+         Release\MonitorSYSDlg.obj
+         Release\OptimizeCtrDlg.obj
+         Release\ProcessDiagram.obj
+         Release\stdafx.obj
+         正在生成代码
+         已完成代码的生成
          MonitorSYS.vcxproj -> E:\code\C&C++\C&C++\MonitorSYS\Release\MonitorSYS.exe
      1>已完成生成项目“E:\code\C&C++\C&C++\MonitorSYS\MonitorSYS\MonitorSYS.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:00.43
+已用时间 00:00:28.51

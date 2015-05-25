@@ -3,6 +3,8 @@
 #include "afxwin.h"
 #include "CvvImage.h"
 #include "opencv2/opencv.hpp"
+#include "ChartClass/ChartCtrl.h"
+#include "ChartClass/ChartLineSerie.h"
 // CAntimonyDlg ¶Ô»°¿ò
 using namespace cv;
 
@@ -41,9 +43,16 @@ public:
 	CButtonST m_btsuggest;
 	CButtonST m_workCondition;
 	CButtonST m_btworkCondition;
+	CChartCtrl m_chartSize;
+	CChartCtrl m_chartSpeed;
+	CChartCtrl m_chartTexture;
+	CChartCtrl m_chartColor;
 	virtual void OnCancel();
 	void showImage(IplImage *image, UINT ID);
 	void showVedio();
 	afx_msg void OnPaint();
 	void resize_image(IplImage* img, IplImage *theimg);
+	afx_msg void OnTimer(UINT_PTR nIDEvent);
+	CButtonST m_play;
+	CButtonST m_pause;
 };

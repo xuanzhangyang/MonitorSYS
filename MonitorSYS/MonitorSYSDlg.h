@@ -12,6 +12,7 @@
 #include "OptimizeCtrDlg.h"
 #include "GoldDlg.h"
 #include "ProcessDiagram.h"
+
 // CMonitorSYSDlg ¶Ô»°¿ò
 class CMonitorSYSDlg : public CDialogEx
 {
@@ -70,4 +71,7 @@ public:
 	CButtonST m_time;
 	CButtonST m_label;
 	afx_msg void OnTimer(UINT_PTR nIDEvent);
+	CButtonST m_home;
+	CButtonST m_history;
+	CButtonST m_expertsys;
 };

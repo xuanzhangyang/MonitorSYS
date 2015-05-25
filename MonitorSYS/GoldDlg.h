@@ -4,6 +4,8 @@
 #include "CvvImage.h"
 #include "afxwin.h"
 #include "BtnST.h"
+#include "ChartClass/ChartCtrl.h"
+#include "ChartClass/ChartLineSerie.h"
 // CGoldDlg 对话框
 using namespace cv;
 class CGoldDlg : public CDialog
@@ -31,7 +33,10 @@ public:
 	CButtonST m_btsuggest;
 	CButtonST m_workCondition;
 	CButtonST m_btworkCondition;
-
+	CChartCtrl m_chartSize;
+	CChartCtrl m_chartSpeed;
+	CChartCtrl m_chartTexture;
+	CChartCtrl m_chartColor;
 	CRect picrect;
 protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 支持
@@ -48,4 +53,7 @@ public:
 	virtual void OnCancel();
 	afx_msg void OnPaint();
 	void resize_image(IplImage* img, IplImage *theimg);
+	afx_msg void OnTimer(UINT_PTR nIDEvent);
+	CButtonST m_play;
+	CButtonST m_pause;
 };
